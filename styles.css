@@ -1,0 +1,313 @@
+@media  all and (min-width: 768px) and (max-width: 1042px)  {
+    
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.point {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 0px;
+    border: 1px solid white;
+    background-color: rgb(240, 48, 48);;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    font-family: sans-serif;
+}
+
+.slider{
+    background-color: rgb(240, 48, 48);
+    width: 35%;
+    height: 63.5%;
+    position: absolute;
+    margin-left: 60%;
+}
+.one {
+    padding: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+
+.caroussel{
+    background-color: white;
+    width: 65%;
+    height: 30%;
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 20%
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-right: 11px;
+    width: auto;
+    padding: 6px;
+    margin-top: 22px;
+    color: rgb(240, 48, 48);
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+.combine{
+    width: 70%
+}
+  /* Position the "next button" to the right */
+.next {
+    border-left: 1px solid gray;
+    right: 30%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev {
+    left: 0;
+    border-right: 1px solid gray
+}
+.prev:hover, .next:hover {
+    background-color: gray;
+}
+
+.txt {
+    padding: 10px;
+    border-bottom: 1px solid rgb(240, 48, 48);
+    font-family:  monospace;
+    color: rgb(240, 48, 48); 
+}
+
+
+.name-block {
+    background: gray;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.name-block:hover {
+    background: lightgray;
+}
+
+.prog{
+    font-family: 'Courier New', Courier, monospace
+}
+
+.button{
+    background-color: rgb(240, 48, 48);
+    border: none;
+    color: white;
+    padding: 10px 23px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 23px;
+    margin-right: 120px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.logo {
+    padding-left : 20px;
+    display: inline-block;
+    height: 100px;
+    border-right: 1px solid black
+}
+
+.cinema {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+}
+
+.firstC {
+    text-decoration: underline;
+    color: rgb(240, 48, 48)
+
+}
+
+.face{
+    padding-right: 13px;
+    margin-left: 50px;
+    border-right: 1px solid black
+    
+}
+
+.t{
+    padding-left: 13px;
+
+}
+
+.fa-facebook {
+    background: white;
+    color: black;
+}
+
+.fa-twitter {
+    background: white;
+    color: black;
+}
+
+.pdf {
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-right: 30px;
+    font-size: large;}
+
+
+.listC {
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+ul[class="listC"] li  {
+    height: 25px;
+    list-style:none;
+
+}
+
+.menu {
+    display: inline-block;
+}
+.menuOne  {
+    display: flex;
+    flex-direction: row
+}
+.menuTwo {
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 20px 10px 16px 1px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-two {
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: -0.5%;
+    background-color: #f9f9f9;
+    box-shadow: 20px 10px 16px 1px rgba(0,0,0,0.2);
+    padding: 12px 13px;
+    z-index: 1;
+}
+.dropD {
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropT{
+    font-style: italic;
+    font-weight: bold
+}
+
+.programm:hover .dropdown-content {
+    display: block;
+}
+
+.butt:hover .dropdown-two {
+    display: block;
+}
+
+.programm {
+    color: rgb(240, 48, 48)
+}
+
+i{
+    color: rgb(240, 48, 48);
+    font-style: normal
+}
+
+ul[class="enteteOne"] li{
+    display: inline-block ;
+    font-size: 13px;
+    font-weight: 300
+}
+
+ul[class="enteteTwo"]{
+    margin-left: 10px
+}
+
+ul[class="enteteTwo"] li{
+    display: inline ;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold
+}
+
+.active {
+    background-color: rgb(240, 48, 48);
+    
+}
+
+
