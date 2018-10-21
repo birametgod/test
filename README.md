@@ -15,7 +15,3 @@ Vous partirez de la capture d'écran présente sur le fichier `page.png`
 * Vous organisez vos fichier de la façon qui vous convient le mieux
 
 
-
-Le résultat devra être poussé sur un dépot externe git (GitHub, GitLab ...)
-
-Durée estimée du test: 4h

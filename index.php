@@ -103,39 +103,36 @@
         // var slides = document.getElementsByClassName("name-block");
         // console.log(slides.length)
 
-   let dates = document.getElementsByClassName("dateItem");
+    let dates = document.getElementsByClassName("dateItem");
             dates = Array.from(dates);
             let j = 0;
             let placeholder = [];
-          function blank (){
+            function blank (){
                 for(let i = 0; i < dates.length; i++ ){
             dates[i].style.display = "none";
-        }  
-          }
-           function initializer (){
+                }  
+            }
+            function initializer (){
                 for (let i = 0; i < dates.length; i++ ){
                     if( i < 3){
-
-                       dates[i].style.display = "inline-block";
+                        dates[i].style.display = "inline-block";
                     }else{
                         dates[i].style.display = "none";
                     }
                     
-            } 
-           }
+                } 
+            }
     function decrementer(){
-              
         if(j > 0){
             blank()
             j -= 1;
-        for(let i = j; i < j+3; i++ ){
-            dates[i].style.display = "inline-block";
+            for(let i = j; i < j+3; i++ ){
+                dates[i].style.display = "inline-block";
+            }
         }
-        }
-           }
-
-     function incrementer (){
     
+
+    function incrementer (){
         if(j< dates.length - 3){
             blank()
             j += 1;
@@ -143,7 +140,7 @@
             dates[i].style.display = "inline-block";
         }
         }
-     }
+    }
 
         window.onload=initializer;
     </script>
